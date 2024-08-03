@@ -1,0 +1,15 @@
+package com.dao;
+
+import java.sql.Connection;
+
+public class user {
+	
+	private static Connection conn;
+
+	
+
+	
+	
+	
+
+}

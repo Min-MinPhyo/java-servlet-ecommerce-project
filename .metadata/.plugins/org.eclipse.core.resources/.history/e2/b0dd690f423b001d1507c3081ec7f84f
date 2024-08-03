@@ -1,0 +1,12 @@
+package com.dao;
+
+import java.sql.Connection;
+
+public class UserDao {
+	private Connection con;
+	
+	
+	
+	
+
+}

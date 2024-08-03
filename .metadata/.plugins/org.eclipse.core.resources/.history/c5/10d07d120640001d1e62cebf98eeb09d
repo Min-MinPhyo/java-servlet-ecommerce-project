@@ -1,0 +1,44 @@
+package com.dao;
+
+import java.sql.Connection;
+
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import com.model.Product;
+
+import com.model.Order;
+
+public class OrderDao {
+
+	private Connection conn;
+
+	public OrderDao(Connection con) {
+		super();
+		this.conn = con;
+
+	}
+
+	public boolean insertOrder(Order model) {
+		boolean result = false;
+
+	
+		try {
+			String sql="insert into order(p_id,u_id,o_quantity,o_date) values(?,?,?,?)";
+		
+			PreparedStatement ps=conn.prepareStatement(sql);
+			ps.setInt(1,model.getId());
+			ps.setInt(2, model.getUid());
+			ps.setInt(3,model.getQuantity());
+			ps.setString(4,model.getDate());
+			ps.executeUpdate();
+			
+			result=true;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return result;
+			
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.dao;
+
+import java.sql.Connection;
+
+import com.model.User;
+
+public class UserDao {
+	private Connection con;
+
+	public UserDao(Connection con) {
+		super();
+		this.con = con;
+	}
+	
+	public User userLogin(String email, String password) {
+		User user=null;
+		
+		String sql="select * from user where email=? and password=?";
+		
+	}
+	
+	
+	
+	
+	
+	
+
+}

@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/home/mmp/Desktop/J2EE PROJECT/E-Commerence/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3489190149.index
+2841414719.index
+2037773450.index
+2591586362.index
+867305054.index
+2575377521.index
+1256210943.index
